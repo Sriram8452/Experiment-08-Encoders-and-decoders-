@@ -70,13 +70,12 @@ Step 6: Run the program and choose RTL viewer to get RTL realization.
 
 
 ### PROGRAM:
-/*
 Program for Endocers and Decoders  and verify its truth table in quartus using Verilog programming.
-Developed by: SRIRAM G
-RegisterNumber: 212222230149
+## Developed by: SRIRAM G
+## RegisterNumber: 212222230149
 
 ### ENCODER:
-
+```
 module enc(a0,a1,a2,y0,y1,y2,y3,y4,y5,y6,y7);
 input y0,y1,y2,y3,y4,y5,y6,y7;
 output a0,a1,a2;
@@ -84,9 +83,9 @@ or(a0,y7,y5,y3,y1);
 or(a1,y7,y6,y3,y2);
 or(a2,y7,y6,y5,y4);
 endmodule
-
+```
 ### DECODER:
-
+```
 module dec (a0,a1,a2,y0,y1,y2,y3,y4,y5,y6,y7);
 input a0,a1,a2;
 output y0,y1,y2,y3,y4,y5,y6,y7;
@@ -103,8 +102,7 @@ and(y5,a0,a1bar,a2);
 and(y6,a0bar,a1,a2);
 and(y7,a0,a1,a2);
 endmodule
-*/
-
+```
 
 
 
